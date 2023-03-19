@@ -5,21 +5,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="dist/stylesheet.css" />
     <script type="module" src="/lib/js/highlight-syntax.mjs"></script>
-    <link rel="stylesheet" href="/lib/design/stylesheet.css" />
+    <script type="module" src="./js/demo-click.mjs"></script>
+    <script type="module" src="./js/demo-hover.mjs"></script>
+    <script type="module" src="./js/demo-click-hover.mjs"></script>
+    <script type="module" src="./index.mjs"></script>
     <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Source+Code+Pro&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/dark.min.css"
     />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Frontend and State Machines</h1>
+  <body class="loading">
+    <h1>Frontend and State Machines</h1>
+    <p>
+      Welcome, reader, to this great challenge of fortitude. Welcome, reader, to
+      this great challenge of fortitude.
+      <em> Welcome, reader, to this great challenge of fortitude.</em>
+      Welcome, reader, to this great challenge of fortitude.Welcome, reader, to
+      this great challenge of fortitude.
+    </p>
+    <blockquote>
+      Rest here, wary traveler, for great debugging lies ahead.
+    </blockquote>
+    <img
+      class="mb-10"
+      src="./assets/resthere.jpg"
+      alt="rest here, wary traveler"
+    />
+    <p>The surface shows and hides on click.</p>
+    <pre><code data-src-path="./js/demo-click.mjs" class="language-typescript"></code></pre>
+    <div class="p-5 flex justify-center">
+      <button id="demo-click" class="demo-button pointable">
+        <img src="./assets/touch.svg" alt="touch" />
+      </button>
+      <figure role="tooltip" class="card hidden">
+        <figcaption>Amsterdam Canal</figcaption>
+        <img src="./assets/amsterdam-canal.svg" alt="amsterdam" />
+      </figure>
+    </div>
 
-    <h2>Step I</h2>
-    <pre><code class="language-typescript">
-      function foobar() {
-        return null;
-      }
-    </code></pre>
+    <p>The surface shows and hides with a delay on hover.</p>
+    <pre><code data-src-path="./js/demo-hover.mjs" class="language-typescript"></code></pre>
+    <div class="p-5 flex justify-center">
+      <button id="demo-hover" class="demo-button hoverable">
+        <img src="./assets/touch.svg" alt="touch" />
+      </button>
+      <figure role="tooltip" class="card hidden">
+        <figcaption>Amsterdam Canal</figcaption>
+        <img src="./assets/amsterdam-canal.svg" alt="amsterdam" />
+      </figure>
+    </div>
+
+    <p>A button with a tooltip that immediately shows and hides</p>
+    <pre><code data-src-path="./js/demo-click-hover.mjs" class="language-typescript"></code></pre>
+    <div class="p-5 flex justify-center">
+      <button id="demo-click-hover" class="demo-button pointable hoverable">
+        <img src="./assets/touch.svg" alt="touch" />
+      </button>
+      <figure role="tooltip" class="card hidden">
+        <figcaption>Amsterdam Canal</figcaption>
+        <img src="./assets/amsterdam-canal.svg" alt="amsterdam" />
+      </figure>
+    </div>
   </body>
 </html>

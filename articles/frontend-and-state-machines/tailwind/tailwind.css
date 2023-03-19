@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply container mx-auto max-w-xl font-sans pb-32 bg-zinc-100 dark:bg-zinc-800;
+  @apply transition-opacity duration-500;
+}
+
+body.loading {
+  @apply opacity-0;
+}
+
+p {
+  @apply pb-3 text-sm font-medium text-zinc-900 dark:text-zinc-300 leading-loose;
+}
+
+h1 {
+  @apply text-3xl font-bold py-7 text-gray-700 dark:text-gray-200;
+}
+
+em {
+  @apply text-amber-200 not-italic;
+}
+
+blockquote {
+  @apply pb-3 text-sm font-medium text-zinc-800 dark:text-zinc-400 leading-loose;
+}
+
+button img {
+  @apply w-9 brightness-50 dark:brightness-150;
+}
+
+code {
+  @apply text-xs font-mono leading-relaxed;
+}
+
+.card {
+  @apply py-3 px-24 rounded-sm flex-col items-center transition-all;
+  @apply border-2 border-gray-500 dark:border-gray-400;
+  @apply bg-amber-50 dark:bg-amber-900;
+  animation: appear 150ms;
+}
+
+.card img {
+  @apply w-28 brightness-50 dark:brightness-150;
+}
+
+.card figcaption {
+  @apply font-bold pb-2 text-gray-700 dark:text-zinc-300;
+}
+
+.hljs {
+  background-color: transparent !important;
+  padding: 0 0 0 2em !important;
+  @apply ml-2 border-l-2 border-zinc-200 dark:border-zinc-700;
+}
+
+.demo-button {
+  @apply p-1 rounded-full transition ease-out;
+  user-select: none;
+}
+
+.demo-button.pointable {
+  @apply active:scale-110;
+}
+
+.demo-button.hoverable {
+  @apply hover:scale-110;
+}
+
+.demo-button.pointable.hoverable {
+  @apply hover:scale-110 active:scale-125;
+}
+
+@keyframes appear {
+  from {
+    @apply scale-95;
+  }
+  to {
+    @apply scale-100;
+  }
+}
