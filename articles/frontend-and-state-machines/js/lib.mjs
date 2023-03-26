@@ -1,5 +1,5 @@
 export function showFloatingSurface(button) {
-  const surface = button.parentNode.querySelector("[role='tooltip']");
+  const surface = button.parentNode.querySelector("figure");
   const parent = surface.parentNode;
   const { top, left, width } = button.getBoundingClientRect();
 

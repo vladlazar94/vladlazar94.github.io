@@ -37,7 +37,7 @@ code {
 
 .card {
   @apply py-3 px-24 rounded-sm flex-col items-center transition-all;
-  @apply border-2 border-gray-500 dark:border-gray-400;
+  @apply border-2 border-zinc-600 dark:border-zinc-400;
   @apply bg-amber-50 dark:bg-amber-900;
   animation: appear 150ms;
 }

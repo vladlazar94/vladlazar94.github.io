@@ -9,10 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="dist/stylesheet.css" />
-    <script type="module" src="/lib/js/highlight-syntax.mjs"></script>
-    <script type="module" src="./js/demo-click.mjs"></script>
-    <script type="module" src="./js/demo-hover.mjs"></script>
-    <script type="module" src="./js/demo-click-hover.mjs"></script>
     <script type="module" src="./index.mjs"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Source+Code+Pro&display=swap"
@@ -38,11 +34,12 @@
     />
     <p>The surface shows and hides on click.</p>
     <pre><code data-src-path="./js/demo-click.mjs" class="language-typescript"></code></pre>
+    <script type="module" src="./js/demo-click.mjs"></script>
     <div class="p-5 flex justify-center">
       <button id="demo-click" class="demo-button pointable">
         <img src="./assets/touch.svg" alt="touch" />
       </button>
-      <figure role="tooltip" class="card hidden">
+      <figure class="card hidden">
         <figcaption>Amsterdam Canal</figcaption>
         <img src="./assets/amsterdam-canal.svg" alt="amsterdam" />
       </figure>
@@ -50,11 +47,13 @@
 
     <p>The surface shows and hides with a delay on hover.</p>
     <pre><code data-src-path="./js/demo-hover.mjs" class="language-typescript"></code></pre>
+    <script type="module" src="./js/demo-hover.mjs"></script>
+
     <div class="p-5 flex justify-center">
       <button id="demo-hover" class="demo-button hoverable">
         <img src="./assets/touch.svg" alt="touch" />
       </button>
-      <figure role="tooltip" class="card hidden">
+      <figure class="card hidden">
         <figcaption>Amsterdam Canal</figcaption>
         <img src="./assets/amsterdam-canal.svg" alt="amsterdam" />
       </figure>
@@ -62,11 +61,12 @@
 
     <p>A button with a tooltip that immediately shows and hides</p>
     <pre><code data-src-path="./js/demo-click-hover.mjs" class="language-typescript"></code></pre>
+    <script type="module" src="./js/demo-click-hover.mjs"></script>
     <div class="p-5 flex justify-center">
       <button id="demo-click-hover" class="demo-button pointable hoverable">
         <img src="./assets/touch.svg" alt="touch" />
       </button>
-      <figure role="tooltip" class="card hidden">
+      <figure class="card hidden">
         <figcaption>Amsterdam Canal</figcaption>
         <img src="./assets/amsterdam-canal.svg" alt="amsterdam" />
       </figure>
