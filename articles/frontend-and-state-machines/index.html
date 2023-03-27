@@ -6,14 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="dist/stylesheet.css" />
-    <script type="module" src="./index.mjs"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Source+Code+Pro&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="/dist/css/design.css" />
+    <script
+      type="module"
+      src="/dist/js/articles/frontend-and-state-machines/index.js"
+    ></script>
   </head>
   <body class="loading">
     <h1>Frontend and State Machines</h1>
@@ -32,9 +29,9 @@
       src="./assets/resthere.jpg"
       alt="rest here, wary traveler"
     />
+
     <p>The surface shows and hides on click.</p>
-    <pre><code data-src-path="./js/demo-click.mjs" class="language-typescript"></code></pre>
-    <script type="module" src="./js/demo-click.mjs"></script>
+    <pre><code data-src-path="./script/demo-click.ts" class="language-typescript"></code></pre>
     <div class="p-5 flex justify-center">
       <button id="demo-click" class="demo-button pointable">
         <img src="./assets/touch.svg" alt="touch" />
@@ -46,9 +43,7 @@
     </div>
 
     <p>The surface shows and hides with a delay on hover.</p>
-    <pre><code data-src-path="./js/demo-hover.mjs" class="language-typescript"></code></pre>
-    <script type="module" src="./js/demo-hover.mjs"></script>
-
+    <pre><code data-src-path="./script/demo-hover.ts" class="language-typescript"></code></pre>
     <div class="p-5 flex justify-center">
       <button id="demo-hover" class="demo-button hoverable">
         <img src="./assets/touch.svg" alt="touch" />
@@ -60,8 +55,7 @@
     </div>
 
     <p>A button with a tooltip that immediately shows and hides</p>
-    <pre><code data-src-path="./js/demo-click-hover.mjs" class="language-typescript"></code></pre>
-    <script type="module" src="./js/demo-click-hover.mjs"></script>
+    <pre><code data-src-path="./script/demo-click-hover.ts" class="language-typescript"></code></pre>
     <div class="p-5 flex justify-center">
       <button id="demo-click-hover" class="demo-button pointable hoverable">
         <img src="./assets/touch.svg" alt="touch" />

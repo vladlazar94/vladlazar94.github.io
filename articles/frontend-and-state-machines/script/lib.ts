@@ -1,6 +1,6 @@
-export function showFloatingSurface(button) {
-  const surface = button.parentNode.querySelector("figure");
-  const parent = surface.parentNode;
+export function showFloatingSurface(button: Element) {
+  const surface = button.parentNode!.querySelector("figure")!;
+  const parent = surface!.parentNode!;
   const { top, left, width } = button.getBoundingClientRect();
 
   surface.classList.remove("hidden");
